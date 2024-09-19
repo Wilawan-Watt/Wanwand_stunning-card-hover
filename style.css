@@ -201,7 +201,7 @@ body {
 }
 
 /* ---------- For large devices ---------- */
-@media screen and (min-width: 1150px) {
+/* @media screen and (min-width: 1150px) {
     body {
         display: flex;
         justify-content: center;
@@ -213,4 +213,4 @@ body {
             align-items: center;
         }
     }
-}
+} */
