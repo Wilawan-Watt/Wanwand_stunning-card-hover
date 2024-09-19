@@ -1,0 +1,160 @@
+/* ---------- Rubik Font ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* ---------- Noto Serif Thai Font ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffcdd4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Rubik", sans-serif;
+}
+
+/* ---------- card-container section ---------- */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+
+}
+
+/* ---------- card section ---------- */
+.card {
+    width: 320px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid #fff;
+    position: relative;
+    box-shadow: 0 12px 24px hsla(0, 0%, 0%, 0.233);
+}
+
+.card img:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.card:nth-child(2) img {
+    width: 140%;
+    height: 110%;
+    object-fit: cover;
+    border-radius: 12px;
+    position: relative;
+    left: -10%;
+    top: -10%;
+}
+
+.card:nth-child(3) img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    /* position: relative;
+    left: -20%; */
+}
+
+/* ---------- card-body section ---------- */
+.card-body {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #1f3d475b;
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+}
+
+.card:hover .card-body {
+    right: 0;
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.card-sub-title {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.card-info {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 40px 0;
+    font-weight: 400;
+    font-family: "Noto Serif Thai", serif;
+}
+
+/* ---------- card button section ---------- */
+.card-btn {
+    color: #fff;
+    background: #ffaeb9;
+    padding: 10px 20px;
+    width: 200px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: "Rubik", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center ;
+}
+
+.card-btn:hover {
+    outline: 4px solid #fff;
+    border-radius: 10px;
+}
+
+.card-btn--like {
+    background: #fff;
+}
+
+.card-btn--like:hover {
+    outline: 4px solid #ffaeb9;
+    border-radius: 10px;
+}
+
+.card-btn p {
+    padding-left: .3rem;
+    font-size: 15px;
+}
+
+.card-btn--like p {
+    color: rgb(224, 49, 49);
+}
+
+.card-btn svg {
+    stroke-width: 2px;
+}
+
+.card-btn--like svg {
+    fill: rgb(224, 49, 49);
+    stroke: rgb(224, 49, 49);
+}
